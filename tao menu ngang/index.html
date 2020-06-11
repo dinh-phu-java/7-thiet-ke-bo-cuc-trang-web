@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu doc</title>
+	<style type="text/css">
+		a{
+			text-decoration:none;
+		}
+		a:hover{
+			color:green;
+		}
+		li a{
+			color:white;
+		}
+		li{
+			width:170px;
+			background-color:black;
+			color:white;
+		}
+		ul li {
+			display:inline-block;
+			position:relative;
+			vertical-align: top;
+			padding:10px;
+			margin:-1px;
+		}
+		ul li ul li{
+			display:block;
+			padding: 10px;
+			width:170px;
+		}
+		ul li ul{
+			display:block;
+			position: absolute;
+			top:40px;
+			left:-39px;
+			opacity: 0;
+			transition: all 0.5s ease-in-out;
+		}
+		ul li:hover ul{
+			opacity:1;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li  class="sem1">Sem 1
+			<ul>
+				<li><a href="">Computing</a></li>
+				<li><a href="">C</a></li>
+				<li><a href="">Building</a></li>
+				<li><a href="">Ms Transac</a></li>
+				<li><a href="">Project</a></li>
+			</ul>
+		</li>
+		<li class="sem2">Sem 2
+			<ul>
+				<li>
+					<a href="">Cloud</a>
+				</li>
+				<li>
+					<a href="">APJ - I</a>
+				</li>
+				<li>
+					<a href="">APJ - II</a>
+				</li>
+				<li>
+					<a href="">APJ - III</a>
+				</li>
+				<li>
+					<a href="">eProject</a>
+				</li>
+			</ul>
+		</li>
+		<li><a href="">Sem 3</a></li>
+		<li><a href="">Sem 4</a></li>
+	</ul>
+</body>
+</html>
